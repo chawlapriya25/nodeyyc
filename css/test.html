@@ -1,0 +1,40 @@
+<!Doctype html> 
+<html>
+    <head>
+        <style>
+            p:first-letter{
+                color:red;
+            }
+           
+            input:focus {
+                background-color: aqua;
+
+            }
+            p::first-line{
+                color:indigo
+            }
+            p.start::before{
+                content:url(smiley.gif)
+            }
+            p.end::after{
+                content:url(smiley.gif)
+                  }
+             *:selection{
+                 color:brown;
+             }
+            div+p {
+                background-color:yellow;
+                }
+          </style>
+    </head>
+    <body>
+       
+        <div>
+            <p class="start">Paragraph 1 in the div </p>
+             <p><label>FIRST NAME </label><input type="text" name="username" value=""></p>
+            <section><p>Paragraph 3 in the div</p></section>
+        </div>
+            <p class ="end">Paragraph 4 in the div</p>
+            <p> Paragraph 5 in the div</p>
+         </body>
+</html>
