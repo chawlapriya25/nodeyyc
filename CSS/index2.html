@@ -4,24 +4,36 @@
       </head>
       <body>
         <style>
-            ul.one#menu li{
+           
+           
+            ul.one li{
               color:red;
                 list-style:none;
                 list-style-type: circle;
                 display:inline;
             }
-            ul.two #menu li{
+            ul.two li{
                 color:red;
+                list-style:circle;
                 list-style-image: url(smiley.gif);
                 display:inline;
                 
             }
-            ol{
+            ul.auto li{
+                display:inline;
+            }
+            ol.one{
                 color:blue;
+               
+               
+            }
+            ol.two{
+               color:blue;
+               padding-left: 500px;
+                padding-bottom:10px;
             }
         </style>
-     
-        <ul  id="menu";style=color:red; >
+         <ul class="auto";style=color:red; >
             <li>Item One</li>
             <li>Item Two</li>
             <li>Item Three</li>
@@ -34,15 +46,14 @@
         
         <ul class="one">
             <li>Item One</li>
-            <li>Item Two</li>
+            <li> Item Two</li>
             <li>Item Three</li>
             <li>Item Four</li>
             <li>Item Five</li>
             <li>Item Six</li>
             <li>Item Seven</li>
             <li>Item Eight</li>
-        </ul>
-        
+        </ul>        
         <ul  class="two"
            style=color:red;>
             <li>Item One</li>
@@ -55,7 +66,7 @@
             <li>Item Eight</li>
         </ul>
         
-        <ol>
+        <ol class="one">
             <li>Item One</li>
             <li style=color:orange;>Item Two</li>
             <li>Item Three</li>
@@ -66,7 +77,7 @@
             <li style=color:blueviolet;>Item Eight</li>
         </ol>
         
-        <ol>
+        <ol class="two">
             <li style=color:cyan;>Item One</li>
             <li>Item Two</li>
             <li style=color:darkred;>Item Three</li>
@@ -76,6 +87,10 @@
             <li style=color:olivedrab;>Item Seven</li>
             <li>Item Eight</li>
         </ol>
- 
+        <a href= "1.about.com">ABOUT</a><br>
+        <a href= "2.home.com" target=_blank>HOME</a><br>
+         <a href= "3.contact.com" target=_blank>CONTACT</a><br>
+          <a href= "4.about.com">ABOUT</a><br>
+
       </body>
   </html>
